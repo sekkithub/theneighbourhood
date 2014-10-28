@@ -1,0 +1,357 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400,300,700,600);
+@font-face {
+  font-family: 'brandon';
+  src: url("../fonts/29C08D_1_0.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/29C08D_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/29C08D_1_0.woff") format("woff"), url("../fonts/29C08D_1_0.ttf") format("truetype"), url("../fonts/29C08D_1_0.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/* line 14, ../sass/style.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 18, ../sass/style.scss */
+h2 {
+  margin: 0;
+}
+
+/* line 23, ../sass/style.scss */
+.navBar .active {
+  background-color: blue;
+  color: white;
+}
+
+/* line 30, ../sass/style.scss */
+#scrollValue {
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  z-index: 10000;
+}
+
+/* keep full widget on smaller screens */
+@media (max-width: 767px) {
+  /* line 41, ../sass/style.scss */
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 48, ../sass/style.scss */
+img {
+  margin: auto;
+  width: 100%;
+}
+
+/* Parallax */
+/* line 54, ../sass/style.scss */
+#header {
+  font-family: "brandon";
+  background: #fff;
+  color: #000;
+  height: 70px;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  z-index: 100000;
+}
+/* line 64, ../sass/style.scss */
+#header #burgerMenu {
+  cursor: pointer;
+  padding-left: 1.25em;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 40px;
+  height: 24px;
+}
+/* line 74, ../sass/style.scss */
+#header .menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 6px solid #fd8c00;
+  width: 100%;
+}
+/* line 82, ../sass/style.scss */
+#header .menu-top {
+  top: 0;
+}
+/* line 86, ../sass/style.scss */
+#header .menu-middle {
+  top: 12px;
+}
+/* line 90, ../sass/style.scss */
+#header .menu-bottom {
+  top: 24px;
+}
+/* line 94, ../sass/style.scss */
+#header .menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+/* line 101, ../sass/style.scss */
+#header .menu-middle-click {
+  opacity: 0;
+}
+/* line 105, ../sass/style.scss */
+#header .menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}
+/* line 112, ../sass/style.scss */
+#header .logo {
+  background: url("../images/neighbourhood-logo.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -100px;
+  width: 200px;
+  height: 31px;
+}
+/* line 121, ../sass/style.scss */
+#header .title {
+  color: #fd8c00;
+  font-size: 20px;
+  font-weight: bold;
+  height: 70px;
+  line-height: 70px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+/* line 134, ../sass/style.scss */
+#menu {
+  background: #fff;
+  width: 160px;
+  position: absolute;
+  top: -180px;
+  z-index: 100;
+}
+/* line 141, ../sass/style.scss */
+#menu ul {
+  font-family: "brandon";
+  font-size: 20px;
+  margin-left: 30px;
+  list-style: none;
+  padding: 20px 0 10px;
+}
+/* line 148, ../sass/style.scss */
+#menu ul li {
+  line-height: 34px;
+}
+/* line 152, ../sass/style.scss */
+#menu ul a {
+  color: #fd8c00;
+}
+
+/* line 160, ../sass/style.scss */
+.content {
+  color: #fff;
+  position: relative;
+  height: 54vh;
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: cover;
+}
+/* line 168, ../sass/style.scss */
+.content .l-content {
+  float: left;
+  padding: 85px;
+  margin-left: 8.33333%;
+  width: 83.33333%;
+}
+
+/* line 177, ../sass/style.scss */
+#first {
+  background: url(../images/bg/head.jpg) 50% 0 no-repeat fixed #000;
+  font-family: "brandon";
+  position: relative;
+}
+/* line 182, ../sass/style.scss */
+#first .l-content {
+  position: absolute;
+  bottom: 0;
+}
+/* line 187, ../sass/style.scss */
+#first h2, #first h3 {
+  font-size: 40px;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 194, ../sass/style.scss */
+#first h3 {
+  margin-bottom: 20px;
+}
+/* line 198, ../sass/style.scss */
+#first .line {
+  width: 90px;
+  height: 20px;
+  margin-bottom: 30px;
+}
+/* line 203, ../sass/style.scss */
+#first .line svg {
+  background: #fff;
+}
+/* line 208, ../sass/style.scss */
+#first p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0;
+  letter-spacing: .08em;
+}
+
+/* line 218, ../sass/style.scss */
+#second {
+  background: #fff 50% 0 no-repeat fixed;
+  color: #000;
+  font-family: "brandon";
+  height: 220%;
+  text-align: center;
+}
+/* line 225, ../sass/style.scss */
+#second .l-content {
+  float: left;
+  padding: 20px;
+  width: 83.33333%;
+}
+/* line 231, ../sass/style.scss */
+#second h2 {
+  color: #ffb064;
+  font-size: 70px;
+  line-height: 70px;
+  margin: 60px auto 30px;
+  border-bottom: 10px solid;
+  width: 320px;
+}
+/* line 240, ../sass/style.scss */
+#second ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 244, ../sass/style.scss */
+#second ul li {
+  font-size: 60px;
+  line-height: 2em;
+  cursor: pointer;
+}
+/* line 251, ../sass/style.scss */
+#second .effect01 {
+  color: #00b571;
+}
+/* line 255, ../sass/style.scss */
+#second .effect02 {
+  color: #1c90d2;
+}
+/* line 258, ../sass/style.scss */
+#second .effect02:hover {
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blinker;
+  -moz-animation-duration: .2s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: blinker;
+  animation-duration: .2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* line 273, ../sass/style.scss */
+#second .effect03 {
+  color: #f9052e;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 278, ../sass/style.scss */
+#second .effect03:hover {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+@keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+/* line 319, ../sass/style.scss */
+#footer {
+  background: #fd8c00;
+  height: 70px;
+  position: relative;
+}
+/* line 324, ../sass/style.scss */
+#footer .contact,
+#footer .sns {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+/* line 331, ../sass/style.scss */
+#footer .contact {
+  left: 100px;
+}
+/* line 335, ../sass/style.scss */
+#footer .sns {
+  right: 100px;
+}
+/* line 339, ../sass/style.scss */
+#footer p {
+  color: #fff;
+  line-height: 20px;
+  margin: 0;
+  top: 50%;
+}
+/* line 345, ../sass/style.scss */
+#footer p span.tel,
+#footer p a {
+  text-decoration: underline;
+}
+/* line 350, ../sass/style.scss */
+#footer p a {
+  color: #fff;
+}
+/* line 355, ../sass/style.scss */
+#footer p span.newsLetter a {
+  text-decoration: none;
+}

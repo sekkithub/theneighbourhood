@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="//code.angularjs.org/1.1.5/angular.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+    
+  <body>
+    <section id="header">
+
+      <div id="burgerMenu">
+        <span class="menu-global menu-top"></span>
+        <span class="menu-global menu-middle"></span>
+        <span class="menu-global menu-bottom"></span>
+      </div>
+
+      <div class="logo"></div>
+      <div class="title">
+        <span>Hood ‘14</span>
+      </div>
+    </section>
+
+    <div id="menu">
+      <ul>
+        <li><a href="">What's on</a></li>
+        <li><a href="">The festival</a></li>
+        <li><a href="">Supporters</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+
+
+      <!-- Parallax -->
+      <div id="scrollValue"></div>
+
+      <section id="first" class="content">
+        <div class="l-content">
+          <h2>Hood ‘14</h2>
+          <h3>23-30th October</h3>
+          <div class="line">
+            <?xml version="1.0" standalone="no"?>
+            <svg width="90px" height="20px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 80 Q 95 10 180 80" stroke="black" fill="transparent"/>
+            </svg>
+          </div>
+          <p>10 days of events celebrating creativity,<br />
+            collaboration and inclusivity in the worlds of art,<br />
+            design, illustration, animation and photography.
+          </p>
+        </div>
+      </section>
+
+      <section id="second" class="content">
+        <div class="l-content">
+          <h2>LINE UP</h2>
+          <div class="artistsContents" ng-app ng-controller="ArtistsCtrl">
+            <ul>
+              <li ng-repeat="artist in artists" ng-bind-html-unsafe="getContent(artist)"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="contact">
+          <p>
+           <span class="tel">+44(0)161 244 9500</span><br />
+           <span class="email"><a href="mailto:hello@the-neighbourhood.com">hello@the-neighbourhood.com</a></span>
+          </p>
+        </div>
+        <div class="sns">
+          <p>
+           <span class="follow">Follow us on <a href="">Twitter</a>, <a href="">Vimeo</a> or <a href="">RSS</a></span><br />
+           <span class="newsLetter"><a href="">Sign up to our newsletter</a></span>
+          </p>
+        </div>
+      </section>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lineup.js"></script>
+
+
+  </body>
+</html>
